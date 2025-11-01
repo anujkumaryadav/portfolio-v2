@@ -5,7 +5,7 @@ import grainImage from "@/assets/images/grain.jpg";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div id="home" className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_top,transparent,black_40%,black_70%)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -42,14 +42,22 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center gap-4 items-center mt-8">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+          <a 
+            href="#projects" 
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:bg-white/10 transition-colors"
+          >
             <span className="font-semibold">Explore My Work</span>
-            <ArrowDown className="size-4 " />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white text-gray-900 bg-white px-6 h-12 rounded-xl ">
+            <ArrowDown className="size-4" />
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/anujkumarlyadav/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 border border-white text-gray-900 bg-white px-6 h-12 rounded-xl hover:bg-gray-100 transition-colors"
+          >
             <span>👋🏻</span>
-            <span className="font-semibold ">Let's Connect</span>
-          </button>
+            <span className="font-semibold">Let's Connect</span>
+          </a>
         </div>
       </div>
     </div>
